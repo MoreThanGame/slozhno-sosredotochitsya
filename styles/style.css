@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
+  background-attachment: fixed;
 }
 
 /*   header   */
@@ -225,6 +226,7 @@
   font-weight: 400;
   line-height: 23.4px; /* 130% */
   background-color: var(--main-color);
+  margin-top: 20px;
 }
 
 .paragraph {
@@ -237,10 +239,6 @@
   margin-top: 10px;
 }
 
-.paragraph-title-section3 {
-  margin-top: 20px;
-}
-
 .paragraph-title:last-child {
   margin-top: 80px;
 }
@@ -250,6 +248,7 @@
 .main__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 315px 428px;
   padding: 20px;
   gap: 20px;
 }
@@ -263,6 +262,7 @@
 
 .image1 {
   grid-column: 1 / 3;
+  grid-row: 1;
 }
 
 .image2 {
@@ -281,12 +281,14 @@
 
 .image5 {
   grid-column: 2 / 4;
+  grid-row: 3;
+  margin-block-start: 5px;
 }
 
 /*   footer   */
 
 .footer {
-  margin-block-start: 30px;
+  margin-block-start: 42px;
   min-height: 768px;
 }
 
@@ -342,13 +344,27 @@
     margin-inline-start: 7px;
   }
 
+  .main__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 192px 230px 318px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .image5 {
+    margin-block-start: 0;
+  }
+
   .footer {
     min-height: 1024px;
+    margin-block-start: 40px;
   }
 }
 
 @media (width <= 375px) {
   .header {
+    min-height: 668px;
     padding-block-start: 10px;
     padding-inline-end: 10px;
     padding-block-end: 10px;
@@ -372,12 +388,6 @@
 
   .header__theme-menu {
     padding-block-start: 64px;
-  }
-  .header {
-    min-height: 668px;
-    padding-block-start: 10px;
-    padding-inline-end: 10px;
-    padding-block-end: 10px;
   }
 
   .header__title {
