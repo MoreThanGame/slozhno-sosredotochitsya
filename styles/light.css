@@ -25,7 +25,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color: #FF8DCB;
+    --main-color: #FF8DCB; 
     --background-color: #FFF1F7;
     --paragraph-title-color: #353430;
     --block-title-color: #353430;
