@@ -41,9 +41,6 @@
 
   .page {
     background-color: var(--background-color);
-  }
-
-  .header {
     background-image: var(--background-image);
   }
 
