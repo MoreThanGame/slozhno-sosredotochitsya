@@ -22,3 +22,50 @@
   --text-font-size: 18px;
   --visibility: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: #FF8DCB;
+    --background-color: #FFF1F7;
+    --paragraph-title-color: #353430;
+    --block-title-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --menu-color: #353430;
+    --title-color: #FFC2E6;
+    --main-font-family: IBM Plex Mono, sans-serif;
+    --title-font-size: 116px;
+    --text-font-size: 18px;
+    --visibility: none;
+  }
+
+  .page {
+    background-color: var(--background-color);
+  }
+
+  .header {
+    background-image: var(--background-image);
+  }
+
+  .header__theme-menu-button {
+    color: var(--menu-color);
+  }
+
+  .decoration__element {
+    display: var(--visibility);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--menu-color);
+  }
+
+  .header__theme-menu-button:focus {
+    outline: 0px solid transparent;
+    border-bottom: 1px solid var(--menu-color);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--menu-color);
+    pointer-events: none;
+  }
+}
