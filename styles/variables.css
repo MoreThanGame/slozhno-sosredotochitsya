@@ -11,9 +11,10 @@
   --text-color: #f1b2ce;
   --menu-color: #ff0070;
   --title-color: #db00ff;
-  --main-font-family: "IBM Plex Mono", "Arial", sans-serif;
+  --main-font-family: "IBM Plex Mono", monospace;
   --title-font-size: 116px;
   --text-font-size: 18px;
   --visibility: visible;
   --hover-border-color: rgba(255, 0, 112, 0.4);
+  --hover-link-color: #f1b2ce;
 }

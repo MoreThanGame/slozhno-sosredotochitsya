@@ -230,7 +230,7 @@
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--menu-color);
+  border-bottom: 1px solid var(--hover-link-color);
 }
 
 .link:focus {
@@ -238,7 +238,7 @@
 }
 
 .link:focus-visible {
-  outline: 1px solid var(--menu-color);
+  outline: 1px solid var(--hover-link-color);
 }
 
 .paragraph-title-section3 {
